@@ -1,4 +1,4 @@
-{% set version = "0.24.10" %}
+{% set version = "0.37.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rayshader_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rayshader/rayshader_{{ version }}.tar.gz
-  sha256: 7d49873927481637f2ccc3191ca6f0cdfa631123db3dae80827d0387e65ab8f1
+  sha256: 2091c2dd4a9a100bb8af4e3a93cfb3107ebc98c8a9d40d4050e2147be7815882
 
 build:
   merge_build_host: true  # [win]
   skip: true  # [osx]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
