@@ -12,7 +12,7 @@ source:
   sha256: 7d49873927481637f2ccc3191ca6f0cdfa631123db3dae80827d0387e65ab8f1
 
 build:
-  skip: true  # [osx]
+  skip: true  # [osx or win]
   number: 3
   rpaths:
     - lib/R/lib/
