@@ -49,7 +49,7 @@ requirements:
     - r-progress
     - r-raster
     - r-rayimage
-    - r-rayshader
+    - r-rayrender
     - r-rayvertex
     - r-rgl
     - r-scales
@@ -67,7 +67,7 @@ requirements:
     - r-progress
     - r-raster
     - r-rayimage
-    - r-rayshader
+    - r-rayrender
     - r-rayvertex
     - r-rgl
     - r-scales
