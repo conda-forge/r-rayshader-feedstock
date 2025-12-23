@@ -49,6 +49,8 @@ requirements:
     - r-progress
     - r-raster
     - r-rayimage
+    - r-rayshader
+    - r-rayvertex
     - r-rgl
     - r-scales
     - r-terrainmeshr
@@ -65,6 +67,8 @@ requirements:
     - r-progress
     - r-raster
     - r-rayimage
+    - r-rayshader
+    - r-rayvertex
     - r-rgl
     - r-scales
     - r-terrainmeshr
