@@ -13,7 +13,7 @@ source:
 
 build:
   skip: true  # [osx or win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -32,12 +32,6 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
-    - {{ cdt('libselinux') }}  # [linux]
-    - {{ cdt('libxdamage') }}  # [linux]
-    - {{ cdt('libxxf86vm') }}  # [linux]
-    - {{ cdt('libxext') }}     # [linux]
   host:
     - r-base
     - r-rcpp
@@ -56,6 +50,7 @@ requirements:
     - r-terrainmeshr
     - libglu  # [linux]
     - xorg-libxfixes  # [linux]
+    - libgl-devel                    # [linux]
   run:
     - r-base
     - r-rcpp
@@ -81,8 +76,8 @@ test:
 about:
   home: https://github.com/tylermorganwall/rayshader
   license: GPL-3.0-only
-  summary: Uses a combination of raytracing and multiple hill shading methods to produce 2D and 3D data visualizations and maps. Includes water detection and layering functions, programmable color palette generation, several built-in textures for hill shading, 2D and 3D plotting options, a built-in path tracer, 'Wavefront'
-    OBJ file export, and the ability to save 3D visualizations to a 3D printable format.
+  summary: Uses a combination of raytracing and multiple hill shading methods to produce 2D and 3D data visualizations and maps. Includes water detection and layering functions, programmable color palette generation, several built-in textures for hill shading, 2D and 3D plotting options, a built-in path tracer, 
+    'Wavefront' OBJ file export, and the ability to save 3D visualizations to a 3D printable format.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
